@@ -8,7 +8,7 @@ $username = 'forge'; // Change this to your username
 $password = ''; // Change this to your password
 
 try {
-    // Connect to MySQL database
+    // Connect to MySQL database with password
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$database", $username, $password);
     
     // Set PDO to throw exceptions on errors
@@ -29,3 +29,4 @@ try {
     // If connection or query fails, display error
     echo "Connection failed: " . $e->getMessage();
 }
+?>
